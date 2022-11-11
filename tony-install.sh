@@ -11,6 +11,7 @@ fi
 git clone https://github.com/tony-aptx4869/plum.git ${PLUM_HOME}
 
 cd ${PLUM_HOME}
+git checkout "master"
 
 recipes=(
     :tony
@@ -38,3 +39,4 @@ echo "正在重新部署鼠鬚管……"
 "/Library/Input Methods/Squirrel.app/Contents/MacOS/Squirrel" --reload
 echo "如果你沒有開啓「專注模式」，請觀察屏幕右上角的通知，"
 echo "通知提示部署完成之後，請盡情體驗【鼠鬚管】吧！"
+echo ""
