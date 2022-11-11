@@ -14,4 +14,5 @@ set package_list=%package_list%^
  ipa^
  middle-chinese^
  scj^
- 
+ pinyin-simp^
+ wubi^

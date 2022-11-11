@@ -1,0 +1,25 @@
+__patch:
+# Rx: emoji:customize:schema=luna_pinyin {
+  - patch/+:
+      __include: emoji_suggestion:/patch
+# }
+
+patch:
+  speller/algebra:
+    __patch:
+      # - pinyin:/zh_z_bufen
+      # - pinyin:/n_l_bufen
+      # - pinyin:/r_l_bufen
+      # - pinyin:/r_y_bufen
+      # - pinyin:/hu_f_buhun
+      # - pinyin:/eng_ong_bufen
+      # - pinyin:/en_eng_bufen
+      - pinyin:/ziantuan
+      # - pinyin:/zhongguan
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
+  translator/preedit_format/+:
+    __patch:
+      - pinyin:/ziantuan_preedit_format
+      # - pinyin:/zhongguan_preedit_format
