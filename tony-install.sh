@@ -32,9 +32,9 @@ recipes=(
 )
 
 bash rime-install "${recipes[@]}" || exit 1
-cp customs/default.custom.yaml ~/Library/Rime/
-cp customs/luna_pinyin.custom.yaml ~/Library/Rime/
-cp customs/squirrel.custom.yaml ~/Library/Rime/
+cp customs/default.custom.yaml ${HOME}"\/Library\/Rime\/"
+cp customs/luna_pinyin.custom.yaml ${HOME}"\/Library\/Rime\/"
+cp customs/squirrel.custom.yaml ${HOME}"\/Library\/Rime\/"
 
 echo "正在重新部署鼠鬚管……"
 "/Library/Input Methods/Squirrel.app/Contents/MacOS/Squirrel" --reload
