@@ -25,8 +25,6 @@ recipes=(
     emoji:customize:schema=cangjie5
     emoji:customize:schema=terra_pinyin
     emoji:customize:schema=jyut6ping3
-    emoji:customize:schema=jyutping
-    emoji:customize:schema=hkcantonese
     emoji:customize:schema=scj6
     emoji:customize:schema=stroke
 )
