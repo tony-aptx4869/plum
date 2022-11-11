@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#encoding: UTF-8
 
 PLUM_HOME=${HOME}"/plum"
 
