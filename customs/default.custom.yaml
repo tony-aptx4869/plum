@@ -6,6 +6,7 @@ patch:
     - schema: luna_pinyin
     - schema: luna_pinyin_simp
     - schema: luna_pinyin_fluency
+    - schema: luna_pinyin_tw
     - schema: combo_pinyin_hy9
     - schema: combo_pinyin
     - schema: combo_pinyin_hy9c
@@ -19,8 +20,7 @@ patch:
     - schema: wubi_pinyin
     - schema: ipa_xsampa
     - schema: ipa_yunlong
-    - schema: jyutping
-    - schema: hkcantonese
+    - schema: jyut6ping3
     - schema: scj6
     - schema: stroke
 

@@ -9,7 +9,6 @@ set package_list=%package_list%^
  cangjie^
  stroke^
  cantonese^
- jyutping^
  emoji^
  ipa^
  middle-chinese^
