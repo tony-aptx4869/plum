@@ -32,10 +32,11 @@ recipes=(
 )
 
 bash rime-install "${recipes[@]}" || exit 1
-cp customs/default.custom.yaml ${HOME}"\/Library\/Rime\/"
-cp customs/luna_pinyin.custom.yaml ${HOME}"\/Library\/Rime\/"
-cp customs/squirrel.custom.yaml ${HOME}"\/Library\/Rime\/"
+cp customs/default.custom.yaml ${HOME}"/Library/Rime/"
+cp customs/luna_pinyin.custom.yaml ${HOME}"/Library/Rime/"
+cp customs/squirrel.custom.yaml ${HOME}"/Library/Rime/"
 
+echo ""
 echo "正在重新部署鼠鬚管……"
 "/Library/Input Methods/Squirrel.app/Contents/MacOS/Squirrel" --reload
 echo "如果你沒有開啓「專注模式」，請觀察屏幕右上角的通知，"
