@@ -56,6 +56,7 @@ gitClone() {
 checkPlumDir() {
     if [ -d ${PLUM_HOME} ]; then
         cd ${PLUM_HOME}
+        git checkout 'install-scripts'
         if git rev-parse --verify 'install-scripts'; then
             IS_TONY_REPO=1
             git remote set-url origin https://ghproxy.com/https://github.com/tony-aptx4869/plum.git
