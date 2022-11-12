@@ -85,6 +85,7 @@ checkPlumDir() {
 # Function to install recipes for Rime (Squirrel on macOS)
 recipesInstall() {
     cd ${PLUM_HOME}
+    git checkout 'master'
     recipes=(
         :tony
         emoji:customize:schema=luna_pinyin
