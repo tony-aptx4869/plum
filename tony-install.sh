@@ -49,7 +49,7 @@ copyFailed() {
 
 # Function to git clone tony-aptx4869/plum.git
 gitClone() {
-    git clone https://ghproxy.com/https://github.com/tony-aptx4869/plum.git ${PLUM_HOME}
+    git clone https://github.com/tony-aptx4869/plum.git ${PLUM_HOME}
 }
 
 # Check something for the dir `plum`
@@ -59,7 +59,7 @@ checkPlumDir() {
         git checkout 'install-scripts'
         if git rev-parse --verify 'install-scripts'; then
             IS_TONY_REPO=1
-            git remote set-url origin https://ghproxy.com/https://github.com/tony-aptx4869/plum.git
+            git remote set-url origin https://github.com/tony-aptx4869/plum.git
             git add *
             git commit -a -m "whatever"
             git checkout 'install-scripts'
