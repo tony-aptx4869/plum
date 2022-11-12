@@ -68,7 +68,7 @@ checkPlumDir() {
             git pull
             git checkout 'master'
             git fetch --all
-            git reset --hard origin/install-scripts
+            git reset --hard origin/master
             git pull
         else
             cd ${HOME}
