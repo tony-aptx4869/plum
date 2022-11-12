@@ -83,6 +83,7 @@ checkPlumDir() {
 
 # Function to install recipes for Rime (Squirrel on macOS)
 recipesInstall() {
+    cd ${PLUM_HOME}
     recipes=(
         :tony
         emoji:customize:schema=luna_pinyin
@@ -103,6 +104,7 @@ recipesInstall() {
 # Funtion to copy custom files
 copyCustomFiles() {
     echo "正在拷貝個性化文件。"
+    cd ${PLUM_HOME}
     cp customs/default.custom.yaml ${HOME}"/Library/Rime/"
     if [ $? != 0 ]; then
         D_COPY_FAILED=0
