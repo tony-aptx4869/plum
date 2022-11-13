@@ -8,6 +8,15 @@ D_COPY_FAILED=0
 L_COPY_FAILED=0
 S_COPY_FAILED=0
 
+xcodeCLTInstall() {
+    echo "首先，您的系統要安裝 Apple 官方的 Xcode Command Line Tools 工具集。"
+    echo "如果您沒有看到系統彈出對話框，說明您之前已經安裝過了。"
+    echo "如果您看到系統彈出了對話框，請按照指示進行安裝，過程中系統可能會"
+    echo "讓您閱讀並同意軟件許可協議，還有可能會讓您輸入當前本地用戶的密碼。"
+    echo ""
+    xcode-select --install
+}
+
 plumMoved() {
     if [ ${PLUM_MOVED} == 1 ]; then
         echo "由於您的用戶 HOME 目錄 "${HOME}
@@ -134,6 +143,7 @@ reloadSquirrel() {
 
 # Function to entry
 entry() {
+    xcodeCLTInstall
     checkPlumDir
     recipesInstall
     copyCustomFiles
